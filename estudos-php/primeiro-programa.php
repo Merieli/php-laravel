@@ -31,8 +31,8 @@ echo "Titular: " . $account["titular"] . ", Saldo: R$ " . $account["saldo"];
 
 
 //4 - Crie um array contendo nomes de familiares seus e após sua criação adicione mais elementos ao array.
-$familia = ["Ester", "Danilo"];
-$familia[] = "Sérgio";
-$familia[4] = "Welington";
+$familia = ["Maria", "Luana"];
+$familia[] = "Carlos";
+$familia[4] = "Marcelo";
 
 print_r($familia);

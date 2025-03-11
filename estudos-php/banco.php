@@ -11,7 +11,7 @@
 // No primeiro caso mencionado, observamos a exibição de um menu, e então procedemos tentando fazer um saque. Inicialmente, nosso saldo é de R$ 1.000,00, e ao tentar sacar R$ 2.000,00. Digitamos "2" e recebemos a pergunta: "Qual valor deseja sacar?". Digitamos "2000" e recebemos uma mensagem de saldo insuficiente. Esta situação é ideal, pois indica que o sistema está funcionando corretamente.
 
 $holder = "Meriéli Manzano";
-$currentBalance = (float) 1000.00;
+$currentBalance = (float) 1_000.0; // o `_` é ignorado pelo PHP num dado de tipo numérico
 
 function startBank($holder, $currentBalance)
 {
@@ -77,7 +77,7 @@ function pressEnterToContinue()
 {
     echo "................................\n";
     echo "Pressione Enter para continuar\n";
-    fgets(STDIN);
+    fgets(STDIN); // Pega a string digitada no teclado
 }
 
 function operationsAccount($holder, $numero, $currentBalance)

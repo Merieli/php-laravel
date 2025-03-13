@@ -1,6 +1,7 @@
 <?php
 
-$email = 'meriéli@dev.com.br';
+$name = 'Meriéli Manzano';
+$email = ' .,meriéli@dev.com.br,. ';
 
 echo substr($email, 0, 7) . PHP_EOL; // merieli
 echo substr($email, 8) . PHP_EOL;
@@ -32,3 +33,22 @@ echo strtolower($usuario) . PHP_EOL; // meriéli
 
 // Para visualizar as extensões PHP instaladas: `php -m`
 // Para verificar arquivos `ini` carregados que são arquivos de configuração: `php --ini`
+
+list($firstName, $lastName) = explode(' ', $name);
+echo PHP_EOL. 'Nome: ' . $firstName . PHP_EOL; // Meriéli
+echo 'Sobrenome: ' . $lastName . PHP_EOL; // Manzano
+
+$csv = 'Merieli Manzano,30,mulher';
+var_dump(explode(',', $csv));
+
+var_dump(explode(',', $csv, 2));
+
+// trim() - remove espaços em branco de uma string
+echo '[' . trim($email) . ']' . PHP_EOL;
+
+// trim() - remove caractetes especificados de uma string
+echo trim($email, ' .,') . PHP_EOL;
+// ltrim() - remove espaços em branco do início de uma string
+// rtrim() - remove espaços em branco do final de uma string
+
+

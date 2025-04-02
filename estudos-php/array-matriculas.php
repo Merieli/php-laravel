@@ -24,3 +24,22 @@ $alunos2027 = $alunos2025 + $newAlunos;
 var_dump($alunos2027);
 
 
+// array_push() - adiciona um ou mais elementos ao final de um array. Retorna o número total de elementos do array após a adição. Essa função modifica o array original e não retorna um novo array.
+array_push($alunos2025, 'Charlie', 'Bob');
+var_dump($alunos2025);
+
+// O operador `[]` também pode ser utilizado para adicionar elementos ao final de um array.
+$alunos2025[] = 'Luiz';
+var_dump($alunos2025);
+
+// array_unshift() - adiciona um ou mais elementos ao início de um array. Retorna o número total de elementos do array após a adição. Essa função modifica o array original e não retorna um novo array.
+array_unshift($alunos2025, 'Stephane', 'Rachel');
+var_dump($alunos2025);
+
+// array_shift() - remove o primeiro elemento de um array e reordena todos os índices. Retorna o valor do primeiro elemento removido. Essa função modifica o array original.
+$primeiroAluno = array_shift($alunos2025);
+var_dump($primeiroAluno);
+
+// array_pop() - remove o último elemento de um array e reordena todos os índices. . Retorna o valor do último elemento removido. Essa função modifica o array original.
+$ultimoAluno = array_pop($alunos2025);
+var_dump($ultimoAluno);
